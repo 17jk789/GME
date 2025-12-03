@@ -1,41 +1,110 @@
-# Prerequisites
-*.d
+# =============================
+# GME Project .gitignore
+# =============================
 
-# Compiled Object files
-*.slo
-*.lo
+# -----------------------------
+# C++ / Build Artifacts
+# -----------------------------
+
+# Object files
 *.o
 *.obj
+*.lo
+*.slo
 
 # Precompiled Headers
 *.gch
 *.pch
 
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
+# Libraries
+*.a
+*.lib
+*.la
+*.lai
 *.so
 *.dylib
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
 
 # Executables
 *.exe
 *.out
 *.app
 
-# debug information files
+# Linker / Debugger
+*.ilk
+*.pdb
 *.dwo
+
+# Fortran
+*.mod
+*.smod
+
+# Build directories
+/build/
+/bin/
+/CMakeFiles/
+/CMakeCache.txt
+/*.cmake
+
+# -----------------------------
+# Python / uv / Django
+# -----------------------------
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# uv virtual environment
+.venv/
+
+# Django / Flask / general
+*.sqlite3
+db.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+local_settings.py
+.env
+*.env
+*.coverage
+coverage.xml
+htmlcov/
+
+# Django migrations
+*/migrations/*.pyc
+*/migrations/*.py[cod]
+*/migrations/__pycache__/
+
+# -----------------------------
+# IDEs / Editors
+# -----------------------------
+# Visual Studio
+.vs/
+*.vcxproj*
+*.vcproj*
+*.sln
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+*.iml
+
+# Mac / Linux
+.DS_Store
+*.swp
+*~
+Thumbs.db
+
+# -----------------------------
+# Logs / Temporary
+# -----------------------------
+*.log
+*.tmp
+*.temp
+*.bak
+*.old
